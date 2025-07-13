@@ -1,0 +1,62 @@
+/* Mobile-First Default Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Medium Screens - Tablets */
+@media (min-width: 600px) {
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  main {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+/* Large Screens - Desktops */
+@media (min-width: 992px) {
+  nav ul {
+    text-align: right;
+    padding-right: 2rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    max-width: 1000px;
+  }
+}
